@@ -1,14 +1,14 @@
 TMDB API-KEY: 
 ````
-079c53c7a0369363ae29016c9c3b29f6
+c9414824f6df9d8c6e96f86b58b91211
 ````
 
 <div align="center">
 
 
   <br>
-  <a href="http://netflix-clone-with-tmdb-using-react-mui.vercel.app/">
-    <img src="./public/assets/netflix-logo.png" alt="Logo" width="100" height="32">
+  <a href="https://bsmedia.business-standard.com/_media/bs/img/article/2024-05/28/thumb/featurecrop/600X300/1716882253-8331.jpg">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTkmM89-yrSSuBC2gKyhtQNlJIB-5B9zUrYA&amp;s" alt="Logo" width="100" height="32">
   </a>
 </div>
 
@@ -21,7 +21,7 @@ TMDB API-KEY:
 
 
 
-# Deploy Netflix Clone on Cloud using Jenkins - DevSecOps Project!
+# Deploy Netflix Clone on Cloud using Jenkins - DevOps Project!
 
 ### **Phase 1: Initial Setup and Deployment**
 
@@ -192,7 +192,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/abhipraydhoble/netflix.git'
+                git branch: 'main', url: 'https://github.com/gk2793/netflix.git'
             }
         }
         stage("Sonarqube Analysis") {
@@ -282,7 +282,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'main', url: 'https://github.com/abhipraydhoble/netflix.git'
+                git branch: 'main', url: 'https://github.com/gk2793/netflix.git'
             }
         }
         stage("Sonarqube Analysis "){
@@ -321,8 +321,8 @@ pipeline{
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
                        sh "docker build --build-arg TMDB_V3_API_KEY=<yourapikey> -t netflix ."
-                       sh "docker tag netflix abhipraydhoble/netflix:latest "
-                       sh "docker push abhipraydhoble/netflix:latest "
+                       sh "docker tag netflix kartik2793/netflix:latest "
+                       sh "docker push kartik2793/netflix:latest "
                     }
                 }
             }
@@ -334,7 +334,7 @@ pipeline{
         }
         stage('Deploy to container'){
             steps{
-                sh 'docker run -d --name netflix -p 8081:80 abhipraydhoble/netflix:latest'
+                sh 'docker run -d --name netflix -p 8081:80 kartik2793/netflix:latest'
             }
         }
     }
