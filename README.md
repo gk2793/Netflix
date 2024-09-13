@@ -8,7 +8,7 @@ c9414824f6df9d8c6e96f86b58b91211
 
   <br>
   <a href="https://media.allure.com/photos/583ef8ce087c3f6063314aaf/16:9/w_2560%2Cc_limit/netflix-download.png">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTkmM89-yrSSuBC2gKyhtQNlJIB-5B9zUrYA&amp;s" alt="Logo" width="100" height="32">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTkmM89-yrSSuBC2gKyhtQNlJIB-5B9zUrYA&amp;s" alt="Logo" width="100" height="100">
   </a>
 </div>
 
