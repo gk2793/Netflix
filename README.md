@@ -1,6 +1,6 @@
 TMDB API-KEY: 
 ````
-079c53c7a0369363ae29016c9c3b29f6
+c9414824f6df9d8c6e96f86b58b91211
 ````
 
 <div align="center">
